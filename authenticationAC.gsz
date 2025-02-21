@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gsz:ArgumentDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:gsz="http://www.certware.net/gsz">
+  <goals identifier="G1" description="Authentication is secure" content="Authentication is secure" strategies="//@strategies.0" goalContexts="//@contexts.0"/>
+  <goals identifier="G1.1" description="Multi-factor authentication is secure" content="MFA" goalContexts="//@contexts.1" goalSolutions="//@solutions.0"/>
+  <goals identifier="G1.2" description="Authentication levels are provided according to roles" content="Auth levels provided according to roles" goalSolutions="//@solutions.1"/>
+  <strategies identifier="S1" description="Ensure authentication security through multi-factor authentication, role-based access control, and continuous authentication monitoring" content="MFA, role-based access control, continuous authentication monitoring" goals="//@goals.1 //@goals.2" justifications="//@justifications.0 //@justifications.1"/>
+  <justifications identifier="J1" description="Multi-factor authentication should be implemented" content="NIST SP 800-53 and MEHARI"/>
+  <justifications identifier="J2" description="The manufacturer shall provide authentication levels according to roles" content="P2933 TIPPSS"/>
+  <contexts identifier="C1" description="Device" content="Device"/>
+  <contexts identifier="C2" description="Users access restricted resources" content="Users access restricted resources"/>
+  <solutions identifier="Sol1" description="2FA (password + OTP) is implemented" content="2FA is implemented"/>
+  <solutions identifier="Sol2" description="Role Basec Access Control mechanism is implemented" content="RBAC is implemented"/>
+</gsz:ArgumentDiagram>
